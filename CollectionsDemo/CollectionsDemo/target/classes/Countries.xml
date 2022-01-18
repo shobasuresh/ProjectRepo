@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	 
+	<bean id="Counta" class="com.fidelity.countrypack.Countries">
+		
+	<property name="sampleMap">
+	<map>
+	<entry key="1" value="ind"/>
+	<entry key="2" value="pak"/>
+	</map>
+	</property>
+	
+	 
+	 
+  <property name="sampleProp">
+	<props>
+	<prop key="1">Ind2</prop>
+	<prop key="2">Pak2</prop>
+   </props>
+	</property>
+	
+	
+	<property name="sampleSet">
+    <set>
+	<value>India1</value>
+	<value>Pakistan1</value>
+	</set>
+	</property> 
+	
+   <property name="addressList">
+    <list> 
+    <bean class="com.fidelity.countrypack.Address">
+    <property name="city" value="cochin" />
+     <property name="state" value="kerala" />
+     </bean> 
+     <bean class="com.fidelity.countrypack.Address">
+    <property name="city" value="Hyderabad" />
+     <property name="state" value="andhra" />
+     </bean> 
+      </list>
+     </property> 
+     
+   </bean>
+	
+	
+	<!-- <property name="sampleSet">
+    <set>
+	<value>India1</value>
+	<value>Pakistan1</value>
+	</set>
+	</property>  -->
+
+</beans>
+
+
